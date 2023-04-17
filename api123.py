@@ -9,7 +9,9 @@ app.config["DEBUG"] = True
 def leaf_info():
     if request.method == 'POST':
         data = request.get_json()
+        print(data)
         scientific_name=data['scientific_name']
+    print(scientific_name)
     url1 = f'https://www.google.com/search?q={scientific_name}'
     url2 = f'https://www.google.com/search?q=medicinal+properties+of+{scientific_name}'
     headers = {
