@@ -17,6 +17,7 @@ def leaf_info():
     try:
         url1 = f'https://www.google.com/search?q={scientific_name}'
         url2 = f'https://www.google.com/search?q=medicinal+properties+of+{scientific_name}'
+        
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
         }
